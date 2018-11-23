@@ -1,26 +1,26 @@
+%% -*- mode: erlang; tab-width: 4; indent-tabs-mode: 1; st-rulers: [70] -*-
+%% vim: ts=4 sw=4 ft=erlang noet
 %%%-------------------------------------------------------------------
-%% @doc gmo_pg public API
-%% @end
+%%% @author Andrew Bennett <potatosaladx@gmail.com>
+%%% @copyright 2018, Andrew Bennett
+%%% @doc
+%%%
+%%% @end
+%%% Created :  22 Nov 2018 by Andrew Bennett <potatosaladx@gmail.com>
 %%%-------------------------------------------------------------------
-
 -module(gmo_pg_app).
-
 -behaviour(application).
 
 %% Application callbacks
--export([start/2, stop/1]).
+-export([start/2]).
+-export([stop/1]).
 
-%%====================================================================
-%% API
-%%====================================================================
+%%%===================================================================
+%%% Application callbacks
+%%%===================================================================
 
 start(_StartType, _StartArgs) ->
     gmo_pg_sup:start_link().
 
-%%--------------------------------------------------------------------
 stop(_State) ->
     ok.
-
-%%====================================================================
-%% Internal functions
-%%====================================================================
