@@ -4,7 +4,7 @@ defmodule GMO.PG.MixProject do
   def project() do
     [
       app: :gmo_pg,
-      version: "0.0.0",
+      version: "0.0.1",
       elixir: "~> 1.7",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
@@ -27,6 +27,7 @@ defmodule GMO.PG.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps() do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev},
       {:hackney, ">= 0.0.0"},
       {:iconv, ">= 0.0.0"}
     ]

@@ -10,7 +10,7 @@ by adding `gmo_pg` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:gmo_pg, "~> 0.0.0"}
+    {:gmo_pg, "~> 0.0.1"}
   ]
 end
 ```

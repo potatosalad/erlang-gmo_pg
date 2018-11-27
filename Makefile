@@ -1,6 +1,6 @@
 PROJECT = gmo_pg
 PROJECT_DESCRIPTION = GMO-PG Payment Gateway Client for Erlang and Elixir
-PROJECT_VERSION = 0.0.0
+PROJECT_VERSION = 0.0.1
 
 DEPS = hackney iconv
 

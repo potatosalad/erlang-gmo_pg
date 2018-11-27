@@ -2,7 +2,7 @@
 %% vim: ts=4 sw=4 ft=erlang noet
 {application, gmo_pg, [
 	{description, "GMO-PG Payment Gateway Client for Erlang and Elixir"},
-	{vsn, "0.0.0"},
+	{vsn, "0.0.1"},
 	{id, "git"},
 	{mod, {'gmo_pg_app', []}},
 	{registered, []},
